@@ -19,7 +19,6 @@ function PageContact() {
         />
       </Head>
       <main>
-        <Header />
         <Form />
       </main>
     </>

@@ -17,7 +17,7 @@ function CallToAction({}) {
               <h2 className="fz-70 fw-700">
                 <span>Have a project in mind?</span> <br />
                 <span className="underline">
-                  <Link href="/contactus" className="main-color2">
+                  <Link href="/" className="main-color2">
                     Let’s get to work.
                   </Link>
                 </span>

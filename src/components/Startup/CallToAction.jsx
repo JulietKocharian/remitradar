@@ -29,7 +29,7 @@ function CallToAction() {
               </div>
               <div className="ml-auto">
                 <Link
-                  href={"/contactus"}
+                  href={"/"}
                   className="butn-circle d-flex align-items-center text-center m-auto"
                 >
                   <div className="full-width">
