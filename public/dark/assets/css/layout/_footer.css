@@ -29,3 +29,9 @@ footer .bg-pattern {
   pointer-events: none;
   opacity: .5;
 }
+
+@media screen and (max-width: 992px) {
+  .mw-990 {
+    align-items: center !important;
+  }
+}

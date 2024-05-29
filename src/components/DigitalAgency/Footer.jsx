@@ -78,7 +78,7 @@ function Footer({ }) {
               </div>
             </div>
             <div className="row col-12 w-100 footerDevider" />
-            <div className="col-lg-12 d-flex align-items-center justify-content lg-end justify-content-center  mt-100 mt">
+            <div className="col-lg-12 d-flex align-items-center justify-content lg-end justify-content-center mt-100 mt">
               <div className="copyright">
                 <div className="ml-auto">
                   <p className="fz-13">Powered by RemitRadar Technologies</p>

@@ -3221,6 +3221,7 @@ header.full-height {
 }
 
 @media screen and (max-width: 992px) {
+  
   .approach-carso .swiper-slide {
     height: 720px;
   }

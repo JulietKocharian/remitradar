@@ -29,8 +29,8 @@ function TransferWays({ }) {
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
                   <p className="black">Receiver gets:</p>
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
-                  <button className="btn btn-info btn-lg mt-30" onClick={() => setVisible(true)}>
-                    <span style={{ color: 'white' }}>GET STARTED</span>
+                  <button className="btn btn-info btn-lg mt-30" onClick={() => setVisible(true)} style={{ display: 'block', margin: 'auto' }}>
+                    <span style={{ color: 'white'}}>GET STARTED</span>
                   </button>
                 </div>
               </div>
