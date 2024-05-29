@@ -4,6 +4,7 @@ import Head from "next/head";
 import Layout from "@/layouts/default";
 //= Components
 import Loader from "@/components/Common/Loader";
+import Intro from "@/components/DigitalAgency/Intro";
 import About from "@/components/DigitalAgency/About";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
