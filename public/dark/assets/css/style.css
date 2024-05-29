@@ -1645,9 +1645,9 @@ body.loaded {
 .navbar .showBg {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 59px);
-  background-color: #00000080;
-  top: 59px;
+  height: calc(100vh - 50px);
+  background-color: #000;
+  top: 50px;
   overflow: hidden;
 }
 
@@ -2162,6 +2162,7 @@ footer .social-text li {
   bottom: 40% !important;
   background-color: white !important;
   height: 1px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1150px) {
