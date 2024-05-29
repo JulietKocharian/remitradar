@@ -1484,7 +1484,7 @@ body.loaded {
 .navbar .icon-bar {
   width: 25px;
   height: 2px;
-  background: black;
+  background: white;
   border-radius: 2px;
   overflow: hidden;
   -webkit-transition: 0.3s linear;
@@ -1494,12 +1494,12 @@ body.loaded {
 .navbar .navbar-toggler .icon-bar:first-child {
   -webkit-animation: 0.2s ease-in-out forwards span-first-off;
   animation: 0.2s ease-in-out forwards span-first-off;
-  background: black;
+  background: white;
 }
 
 .navbar .navbar-toggler .icon-bar:nth-child(3) {
   -webkit-animation: 0.2s ease-in-out forwards span-first-off;
-  background: black;
+  background: white;
   animation: 0.2s ease-in-out forwards span-third-off;
 }
 
