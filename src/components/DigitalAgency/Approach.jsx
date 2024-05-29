@@ -57,7 +57,7 @@ function Approach() {
                         alt="image"
                       />
                     </div>
-                    <p className="blue">{item.title}</p>
+                    <p className="black">{item.title}</p>
                     <p className="fz-14 mt-30 black">{item.date}</p>
                   </div>
                 </SwiperSlide>
