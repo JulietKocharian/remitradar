@@ -133,7 +133,7 @@ function TransferPrices() {
                           </div>
                         </div>
                       </div>
-                      <ul>
+                      <ul className="mt-10">
                         <li><span className="black">{item.currency}</span></li>
                         <li><span className="black">{item.country}</span></li>
                         <li><span className="black">{item.time}</span></li>

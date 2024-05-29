@@ -1046,6 +1046,7 @@ img.left {
 .portfolio-fixed .img:nth-of-type(3),
 .slider .swiper-slide-active {
   z-index: 3;
+  height: 500px;
 }
 
 
@@ -1646,7 +1647,7 @@ body.loaded {
   position: absolute;
   width: 100%;
   height: calc(100vh - 50px);
-  background-color: #000;
+  background-color: #1d1d1d;
   top: 50px;
   overflow: hidden;
 }
@@ -2169,6 +2170,7 @@ footer .social-text li {
   .mt {
     margin-top: 50px !important;
   }
+
   .footerDevider {
     position: absolute !important;
     bottom: 35% !important;
@@ -2181,6 +2183,7 @@ footer .social-text li {
   .mt {
     margin-top: 30px !important;
   }
+
   .footerDevider {
     position: absolute !important;
     bottom: 20% !important;
@@ -2430,6 +2433,7 @@ footer .social-text li:last-of-type {
 
 .approach-carso .swiper-wrapper {
   width: auto;
+  /* height: 500px; */
 }
 
 /* rates*/
@@ -2547,6 +2551,7 @@ footer .social-text li:last-of-type {
 
   .approach-carso .swiper-wrapper .swiper-slide {
     margin: 0 !important;
+    /* height: 500px; */
   }
 }
 
@@ -2571,6 +2576,7 @@ footer .social-text li:last-of-type {
 }
 
 .approach-carso .swiper-slide {
+  height: 500px;
   padding: 70px 50px;
   border: 1px solid black;
   border-radius: 250px;
@@ -2581,9 +2587,9 @@ footer .social-text li:last-of-type {
   transition: 0.4s;
 }
 
-/* .approach-carso .swiper-slide:hover {
+.approach-carso .swiper-slide:hover {
   border-color: black;
-} */
+}
 
 .approach-carso .item .stroke {
   color: transparent;
@@ -3215,6 +3221,9 @@ header.full-height {
 }
 
 @media screen and (max-width: 992px) {
+  .approach-carso .swiper-slide {
+    height: 720px;
+  }
 
   .md-hide,
   .navbar .dropdown-menu,
@@ -3480,7 +3489,14 @@ header.full-height {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .approach-carso .swiper-slide {
+    height: 800px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
   .row.md-marg {
     margin-left: 0;
     margin-right: 0;
@@ -3661,5 +3677,18 @@ header.full-height {
 
   .call-action-img .sec-lg-head .butn-circle {
     margin-top: 30px !important;
+  }
+
+  .services-tab .serv-tab-link .item-link span {
+    font-size: 16px;
+
+  }
+
+
+
+}
+@media screen and (max-width: 670px) {
+  .approach-carso .swiper-slide {
+    height: 400px;
   }
 }

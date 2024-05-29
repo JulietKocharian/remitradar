@@ -42,7 +42,7 @@ function Clients() {
                     <p className="link fz-12 black">
                       {item.date}
                     </p>
-                    <span className="h-100">
+                    <span className="h-100" style={{textAlign: 'left'}}>
                       {item.title}
                     </span>
                   </div>

@@ -70,7 +70,7 @@ function ServicesTab({ }) {
     <section className="services-tab section-padding">
       <div className="container">
         <div className="row" id="tabs">
-          <div className="col-lg-6 order2">
+          <div className="col-lg-6 order2 col-md-6 col-sm-6">
             <div className="serv-tab-cont mb-80">
               <div className="tab-content current" id="tabs-1">
                 <div className="item">
@@ -91,7 +91,7 @@ function ServicesTab({ }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 offset-lg-1 valign order1">
+          <div className="col-lg-5 offset-lg-1 valign order1 col-md-6 col-sm-6">
             <div className="serv-tab-link tab-links full-width md-mb50">
               <div className="sec-lg-head mb-80">
                 <h2 className="dot-titl-non mb-15">RemitRadar acts as an advocate for the interests of consumers</h2>
