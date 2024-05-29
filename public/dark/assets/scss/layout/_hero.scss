@@ -1,0 +1,60 @@
+/* Hero
+-----------------------------------------------------------------*/
+.serv-marq {
+  position: relative;
+  z-index: 3;
+
+  .ontop {
+    transform: rotate(-1deg);
+  }
+
+  .main-marq {
+    &:after {
+      display: none;
+    }
+  }
+
+  &.skew {
+    .main-marq {
+      transform: rotate(-2deg);
+    }
+  }
+}
+.block-img {
+  position: relative;
+
+  .vid-circle {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .shap1 {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 150px;
+    transform: rotate(90deg);
+  }
+
+  .shap2 {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 150px;
+    transform: rotate(180deg);
+  }
+
+  .half-img-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: left bottom;
+    background-size: 50%;
+    pointer-events: none;
+  }
+}

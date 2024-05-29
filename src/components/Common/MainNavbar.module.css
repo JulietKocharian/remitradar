@@ -1,0 +1,17 @@
+.am li a {
+    font-weight: 300 !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+}
+
+.nav_li {
+    padding: 15px 30px 10px
+}
+
+@media only screen and (max-width: 1200px) {
+    .am li a {
+        font-weight: 300 !important;
+        font-size: 11px !important;
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,53 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.11.0"
+
+      - name: Install Dependencies
+        run: npm install --force
+
+      - name: Build Project
+        run: npm run build
+
+      - name: SSH into Server and Deploy
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-passphrase: ${{ secrets.SSH_PASSPHRASE }}
+
+      - name: Deploy Application
+        run: |
+          ssh -o StrictHostKeyChecking=no root@91.219.31.17 << 'EOF'
+            # Ensure Node.js, npm, and pm2 are available
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+            nvm use 20.11.0
+
+            cd /root/projects/kingcode_web
+
+            # Ensure pm2 is installed globally
+            npm install -g pm2
+
+            pm2 stop 2
+            git pull
+            npm install --force
+            rm -rf .next/
+            npm run build
+            pm2 start 2
+          EOF

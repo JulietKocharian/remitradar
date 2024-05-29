@@ -1,0 +1,52 @@
+.countries {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9px;
+  border: 1px solid #fff;
+  background: #fff;
+  width: 85px;
+  height: 18px;
+  padding-left: 0;
+  position: relative;
+}
+
+.countries_block {
+  display: flex;
+  justify-content: center;
+  width: 41px;
+  height: 16px;
+  z-index: 1;
+}
+
+.active_bg {
+  display: flex;
+  justify-content: center;
+  color: white!important;
+  /* width: 41px;
+  height: 16px;
+  border-radius: 25px;
+  background: #000;
+  transition: 0.2s; */
+}
+
+.lang {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.countries_bg {
+  width: 41px;
+  height: 16px;
+  border-radius: 25px;
+  background: #000;
+  position: absolute;
+  transition: 1s;
+}

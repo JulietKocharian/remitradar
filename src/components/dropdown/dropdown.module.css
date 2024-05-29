@@ -1,0 +1,147 @@
+.main {
+  font-family: "Montserrat";
+  width: fit-content;
+  transition: 0.3s;
+  position: relative;
+}
+
+.main:active {
+  box-shadow: none;
+}
+
+.dropDownHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #030200;
+  box-shadow: 2px 2px 0px #000000;
+  transform: translate(-1px, -1px);
+  position: relative;
+  border-radius: 2px;
+  width: 78px;
+  height: 34px;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dropDownHeader:hover {
+  box-shadow: none;
+  -webkit-transform: translate(1px, 1px);
+  transform: translate(1px, 1px);
+}
+
+.en,
+.ru,
+.am {
+  color: #993200;
+  font-weight: 900;
+}
+
+.en {
+  font-family: "Montserrat";
+}
+
+.ru {
+  font-family: "Zekton Rg", sans-serif;
+}
+
+.am {
+  font-family: "Montserratarm-Bold";
+}
+
+.arrowIcon {
+  width: 10px;
+  height: 5px;
+  transition: 0.3s;
+  transform: rotate(0);
+}
+
+.arrowActive {
+  transition: 0.3s;
+  transform: rotate(-180deg);
+}
+
+.dropDownListContainer {
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 77px;
+  height: 0;
+  position: absolute;
+}
+
+.dropDownListContainer:active {
+  opacity: 1;
+  height: 65px;
+  box-shadow: 2px 2px 0px #000000;
+  overflow: visible;
+  height: auto;
+}
+
+.dropDownList {
+  padding: 0;
+  margin: 0;
+  background: #e5e4e2;
+  border: 1px solid #030200;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 2px;
+}
+
+.en {
+  font-family: "Montserrat";
+  border-bottom: 1px solid #636366;
+  height: 32px;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #993200 !important;
+  font-weight: 900;
+}
+
+.ru {
+  font-family: "Zekton Rg", sans-serif;
+  border-bottom: 1px solid #636366;
+  height: 32px;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #993200 !important;
+  font-weight: 900;
+}
+
+.am {
+  font-family: "Montserratarm-Bold";
+  border-bottom: 1px solid #636366;
+  height: 32px;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #993200 !important;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .dropDownHeader:hover {
+    box-shadow: 2px 2px 0px #000000;
+    transform: translate(-1px, -1px);
+    -webkit-transform: translate(-1px, -1px);
+  }
+
+  .dropDownHeader:active {
+    box-shadow: none !important;
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+}

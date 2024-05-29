@@ -1,0 +1,39 @@
+.am {
+    font-size: 45px;
+    line-height: 65px;
+}
+
+.en {
+    font-size: 50px;
+}
+
+.span_am {
+    font-size: 13px;
+}
+
+.form_am {
+    font-size: 35px;
+}
+
+.form_en {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .am {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .en {
+        font-size: 35px;
+    }
+
+    .form_am {
+        font-size: 25px;
+    }
+
+    .form_en {
+        font-size: 35px;
+    }
+}

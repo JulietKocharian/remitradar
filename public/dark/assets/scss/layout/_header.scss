@@ -1,0 +1,52 @@
+/* Pages Header
+-----------------------------------------------------------------*/
+
+.page-header {
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+
+  .background {
+    min-height: 480px;
+  }
+
+  .caption {
+    .sub-title {
+      position: relative;
+      padding-left: 20px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #fff;
+      }
+    }
+  }
+
+  .main-marq {
+    margin-bottom: -40px;
+    text-transform: uppercase;
+
+    .slide-har {
+      position: relative;
+
+      &.st1 {
+        .box {
+          animation: slide-har 150s linear infinite;
+        }
+      }
+
+      &.st2 {
+        .box {
+          animation: slide-har-revers 150s linear infinite;
+        }
+      }
+    }
+  }
+}

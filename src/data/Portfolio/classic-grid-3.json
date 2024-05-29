@@ -1,0 +1,84 @@
+{
+  "filters": [
+    {
+      "id": 1,
+      "title": "All",
+      "filter": "*",
+      "count": "08"
+    },
+    {
+      "id": 2,
+      "title": "Branding",
+      "filter": ".brand",
+      "count": "03"
+    },
+    {
+      "id": 3,
+      "title": "Mobile App",
+      "filter": ".app",
+      "count": "02"
+    },
+    {
+      "id": 4,
+      "title": "Creative",
+      "filter": ".web",
+      "count": "03"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "filter": "web",
+      "image": "/dark/assets/imgs/sass-img/work/1.webp",
+      "type": "HQR",
+      "year": "2023",
+      "title": "Rent a car",
+      "href": "http://hqrla.com/"
+    },
+    {
+      "id": 2,
+      "filter": "brand",
+      "image": "/dark/assets/imgs/sass-img/work/2.webp",
+      "type": "Sarton",
+      "year": "2023",
+      "title": "Sewing factory",
+      "href": "http://sarton.am/"
+    },
+    {
+      "id": 3,
+      "filter": "brand",
+      "image": "/dark/assets/imgs/sass-img/work/3.webp",
+      "type": "Just-bit",
+      "year": "2023",
+      "title": "Exchanger",
+      "href": "https://www.just-bit.com/en/?from=USDTTRC20&to=YAMRUB"
+    },
+    {
+      "id": 4,
+      "filter": "app",
+      "image": "/dark/assets/imgs/sass-img/work/4.webp",
+      "type": "EmoScent",
+      "year": "2023",
+      "title": "Qr generator",
+      "href": "https://emoscent.me/"
+    },
+    {
+      "id": 5,
+      "filter": "web",
+      "image": "/dark/assets/imgs/sass-img/work/5.webp",
+      "type": "Geekle",
+      "year": "2023",
+      "title": "Workshops platform",
+      "href": "https://geekle.us/"
+    },
+    {
+      "id": 6,
+      "filter": "web",
+      "image": "/dark/assets/imgs/sass-img/work/6.webp",
+      "type": "Stone World",
+      "year": "2022",
+      "title": "Sell a stone",
+      "href": "https://stoneworld.am/?lang=en"
+    }
+  ]
+}

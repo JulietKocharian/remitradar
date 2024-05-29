@@ -1,0 +1,34 @@
+/* Footer
+-----------------------------------------------------------------*/
+
+footer {
+  position: relative;
+  .social-text {
+    li {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .logo {
+    a {
+      max-width: 120px;
+    }
+  }
+
+  .bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 70px;
+    background-repeat: repeat;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Facebook",
+    "src": "/assets/imgs/footer/facebook-fill.svg",
+    "href": "https://www.facebook.com/KingCode21"
+  },
+  {
+    "id": 2,
+    "title": "Instagram",
+    "src": "/assets/imgs/footer/instagram.svg",
+    "href": "https://www.instagram.com/kingcode.am/"
+  },
+  {
+    "id": 3,
+    "title": "Linkdin",
+    "src": "/assets/imgs/footer/linkedin-fill.svg",
+    "href": "https://www.linkedin.com/company/king-code-am/"
+  }
+]

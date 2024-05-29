@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Research",
+    "text": "Gathering insights and data to inform project development.",
+    "number": "01"
+  },
+  {
+    "id": 2,
+    "title": "Concept",
+    "text": "Developing a framework outlining key ideas and strategies.",
+    "number": "02"
+  },
+  {
+    "id": 3,
+    "title": "Implement",
+    "text": "Transforming plans into action by coding, designing, and executing strategies.",
+    "number": "03"
+  },
+  {
+    "id": 4,
+    "title": "Release",
+    "text": "Finalizing, testing, and making the product or solution public.",
+    "number": "04"
+  }
+]

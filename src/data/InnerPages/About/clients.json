@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "href": "",
+    "date": "PRICE MONITORING",
+    "title": "RemitRadar connects to multiple money transfer systems worldwide to ensure that every service provider sends you the best possible price and currency exchange rate for your money transfer.",
+    "image": "/assets/imgs/moneyTransfer/1.jpeg"
+  },
+  {
+    "id": 2,
+    "href": "",
+    "date": "MONEY TRANSFER AUCTIONS",
+    "title": "RemitRadar provides an free auction to it's consumers where service providers can place their bids on money transfer requests.",
+    "image": "/assets/imgs/moneyTransfer/1.jpeg"
+  },
+  {
+    "id": 3,
+    "href": "",
+    "date": "ONLINE MONEY TRANSFERS",
+    "title": "When service provider selected and best deal arranged, customer can either visit service provider website or complete money transfer request within RemitRadar platform.",
+    "image": "/assets/imgs/moneyTransfer/1.jpeg"
+  },
+  {
+    "id": 4,
+    "href": "",
+    "date": "SAVINGS",
+    "title": "Price monitoring and auction ideology helps to reduce price paid by consumer. Average savings on each 10,000 USD money transfer is over 1034 USD compared to high street banks, and over 35% cheaper than any other money transfer system.",
+    "image": "/assets/imgs/moneyTransfer/1.jpeg"
+  },
+  {
+    "id": 5,
+    "href": "",
+    "date": "EXCHANGE RATES",
+    "title": "RemitRadar also monitors mid market exchange rates by agregating data from various sources worldwide and consolidating them into one feed.",
+    "image": "/assets/imgs/moneyTransfer/1.jpeg"
+  }
+]

@@ -1,0 +1,12 @@
+.homeTitle_am {
+    font-size: 50px;
+    line-height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .homeTitle_am {
+        font-size: 35px;
+        line-height: 40px;
+
+    }
+}

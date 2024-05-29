@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "assets/imgs/serv-icons/0.png",
+    "title": "WEB <BR> Development",
+    "features": [
+      "Front-end Development",
+      "Back-end Development",
+      "Database Development"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "assets/imgs/serv-icons/2.png",
+    "title": "MOBILE <BR> Development",
+    "features": [
+      "iOS App Development",
+      "Android App Development",
+      "React Native"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "assets/imgs/serv-icons/1.png",
+    "title": "UX/UI Design & <BR> Website/App Design",
+    "features": [
+      "User friendly interface",
+      "Nothing distracts from work",
+      "Easy to start chatting"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+body {
+  padding: 0 !important;
+  /* -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: "Arm Hmks Bebas Neue";
+  src: url("./../../public/fonts/ArmHmksBebasNeue.woff");
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Montserratarm-Light";
+  src: url("./../../public/fonts/Montserratarm-Light.otf");
+  font-display: fallback;
+}
+
+.swiper-controls .swiper-button-prev,
+.swiper-controls .swiper-button-next {
+  position: static;
+  display: inline-block;
+}
+
+.swiper-controls .swiper-button-prev:after,
+.swiper-controls .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-controls.arrow-out
+  .swiper-button-prev:hover
+  .swiper-controls.arrow-out
+  .swiper-button-prev:hover
+  .swiper-controls.arrow-out
+  .swiper-button-next:hover
+  .swiper-controls.arrow-out
+  .swiper-button-next:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.swiper-controls.arrow-out .left:not(.swiper-controls.arrow-out .left),
+.swiper-controls.arrow-out .right:not(.swiper-controls.arrow-out .right) {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.swiper-controls.arrow-out .left {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 7px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c9f31d;
+}
+.accordion-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-top: 0 !important;
+  display: block !important;
+}
+
+.accordion-info.active {
+  overflow: unset;
+  margin-top: 15px !important;
+}
+
+.accordion-info.sub-open {
+  overflow: unset;
+  padding: 20px 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .norow {
+    margin: 0 !important;
+    --bs-gutter-x: 1.5rem;
+  }
+}
