@@ -30,7 +30,6 @@ function PortfolioMasonry4() {
         />
       </Head>
       <main className="main-bg">
-        {/* <Header data={metadata} subBg={true} /> */}
         <Grid />
       </main>
     </>
