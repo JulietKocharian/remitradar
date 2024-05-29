@@ -9,6 +9,7 @@ import CheckboxGroup from "../Common/Checkbox";
 
 function TransferWays({ }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [visible, setVisible] = useState(false);
   const { t } = useTranslation("common");
   const { locale, locales, push } = useRouter();
   return (
@@ -21,14 +22,16 @@ function TransferWays({ }) {
             </div>
           </div>
           <div className="row justify-content-center" >
-            <div className="services-mainContainer">
+            <div className="services-mainContainer container col-12 col-lg-12 col-md-11 col-sm-11">
               <div className="row mt-10 justify-content-center">
                 <div className="col-lg-6 col-12 col-md-8 col-sm-8 flex-md-column flex-lg-row">
                   <p className="black">Sending:</p>
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
                   <p className="black">Receiver gets:</p>
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
-                  <button className="btn btn-success btn-lg mt-30">GET STARTED</button>
+                  <button className="btn btn-info btn-lg mt-30" onClick={() => setVisible(true)}>
+                    <span style={{ color: 'white' }}>GET STARTED</span>
+                  </button>
                 </div>
               </div>
               <div className="row mt-10 justify-content-center fees">
@@ -78,19 +81,21 @@ function TransferWays({ }) {
               </div>
               <div className="row mt-30 justify-content-center">
                 <div className="col-lg-6 d-flex justify-content-center">
-                  <button style={{ border: 'none', backgroundColor: 'transparent' }} onClick={() => { setIsOpen((prev) => !prev) }}>
-                    <span className="blue">{isOpen ? 'Close[-]' : 'Compare with others(+)'}</span>
+                  <button className="btn btn-info" onClick={() => { setIsOpen((prev) => !prev) }}>
+                    <span style={{ color: 'white' }}>{isOpen ? 'Close' : 'Compare with others'}</span>
                   </button>
                 </div>
               </div>
               <div className="row w-100 justify-content-center">
                 <CheckboxGroup />
               </div>
-              <div className="row mt-30 justify-content-center">
-                <div className="col-lg-6 d-flex justify-content-center">
-                  <p className="red">you must agree and check all boxes to continue</p>
+              {visible &&
+                <div className="row mt-30 justify-content-center">
+                  <div className="col-lg-6 d-flex justify-content-center">
+                    <p className="red">you must agree and check all boxes to continue</p>
+                  </div>
                 </div>
-              </div>
+              }
             </div>
           </div>
         </div>

@@ -294,7 +294,7 @@ p {
 
 .sub-bg-white {
   background-color: white;
-  box-shadow: 2px 2px 2px lightgray;
+  box-shadow: 2px 2px 20px 0px lightgray;
 }
 
 .sec-lg-head.text-dark p,
@@ -1047,6 +1047,7 @@ img.left {
 .slider .swiper-slide-active {
   z-index: 3;
 }
+
 
 .portfolio-fixed .img:nth-of-type(4) {
   z-index: 4;
@@ -1902,7 +1903,7 @@ body.loaded {
 
 .sec-lg-head .dot-titl-non {
   padding: 7px 30px;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -2044,6 +2045,10 @@ body.loaded {
   object-position: center center;
 }
 
+.swiper-slide:hover {
+  border: none;
+}
+
 .about .img.bg-pattern {
   padding: 50px;
   background-size: 80px !important;
@@ -2150,6 +2155,37 @@ footer .social-text li {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 13px;
+}
+
+.footerDevider {
+  position: absolute !important;
+  bottom: 40% !important;
+  background-color: white !important;
+  height: 1px;
+}
+
+@media screen and (max-width: 1150px) {
+  .mt {
+    margin-top: 50px !important;
+  }
+  .footerDevider {
+    position: absolute !important;
+    bottom: 35% !important;
+    background-color: white !important;
+    height: 1px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .mt {
+    margin-top: 30px !important;
+  }
+  .footerDevider {
+    position: absolute !important;
+    bottom: 20% !important;
+    background-color: white !important;
+    height: 1px;
+  }
 }
 
 .portfolio .grid .inner {
@@ -2404,26 +2440,32 @@ footer .social-text li:last-of-type {
   margin-right: 10px;
   background-color: black;
 }
+
 .flexContainer .pr {
   padding-right: 100px;
 }
+
 @media (max-width: 500px) {
   .flexContainer {
     align-items: center;
     justify-content: space-between;
   }
+
   .flexContainer .pr {
     padding-right: 30px;
   }
+
   .flexContainer .devider {
     display: none;
   }
+
   .fees {
     display: flex;
     /* justify-content: start !important; */
   }
 }
-@media (max-width: 500px) { 
+
+@media (max-width: 500px) {
   .flexContainer .pr {
     padding-right: 10px;
   }
@@ -2529,18 +2571,18 @@ footer .social-text li:last-of-type {
 
 .approach-carso .swiper-slide {
   padding: 70px 50px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid black;
   border-radius: 250px;
-  margin-left: -7px;
-  margin-right: -7px;
+  /* margin-left: -7px; */
+  /* margin-right: -7px; */
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
 
-.approach-carso .swiper-slide:hover {
+/* .approach-carso .swiper-slide:hover {
   border-color: black;
-}
+} */
 
 .approach-carso .item .stroke {
   color: transparent;
@@ -2884,7 +2926,7 @@ footer .bg-pattern {
 
 .work-carsouel .work-crus .img .cont {
   position: absolute;
-  bottom: 30px;
+  bottom: -8px;
   /* left: 30px; */
 }
 
@@ -3020,11 +3062,15 @@ footer .bg-pattern {
 }
 
 .services-tab .serv-tab-cont .item .cont {
+  height: 100%;
   position: absolute;
   bottom: -80px;
   left: 20%;
   right: 0;
   padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .services-tab .serv-tab-link .item-link {
@@ -3595,7 +3641,7 @@ header.full-height {
   }
 
   .clients .brand .item {
-    padding: 40px 0;
+    /* padding: 40px 0; */
   }
 
   .numbers h2 {

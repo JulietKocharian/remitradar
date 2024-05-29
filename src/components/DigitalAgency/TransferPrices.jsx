@@ -133,7 +133,18 @@ function TransferPrices() {
                           </div>
                         </div>
                       </div>
-                      <div>
+                      <ul>
+                        <li><span className="black">{item.currency}</span></li>
+                        <li><span className="black">{item.country}</span></li>
+                        <li><span className="black">{item.time}</span></li>
+                        <li><span className="black">{item.compareCurrent}</span></li>
+                        <li><span className="black" style={{ textDecoration: 'line-through' }}>{item.comparePrevious}</span></li>
+                        <li><span className="black">{item.current}</span></li>
+                        <li><span className="black" style={{ textDecoration: 'line-through' }}>{item.previous}</span></li>
+                        <li><span className="black">Fee: {item.fee}</span></li>
+                        <li><span className="black">Best Company: {item.bestCompany}</span></li>
+                      </ul>
+                      {/* <div>
                         <p className="black">{item.currency}</p>
                         <p className="black">{item.country}</p>
                         <p className="black">{item.time}</p>
@@ -143,7 +154,7 @@ function TransferPrices() {
                         <p className="black" style={{ textDecoration: 'line-through' }}>{item.previous}</p>
                         <p className="black">Fee: {item.fee}</p>
                         <p className="black">Best Company: {item.bestCompany}</p>
-                      </div>
+                      </div> */}
                     </SwiperSlide>
                   ))}
                 </Swiper>

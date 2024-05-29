@@ -50,7 +50,7 @@ const RedCheckbox = ({ label, isChecked, onChange }) => {
                     </svg>
                 )}
             </label>
-            <span>{label}</span>
+            <span onClick={handleCheckboxChange}>{label}</span>
         </div>
     );
 };

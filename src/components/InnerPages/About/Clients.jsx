@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function Clients() {
   return (
-    <div className="clients section-padding pb-100 position-re">
+    <div className="clients section-padding position-re">
       <div className="container">
         <div className="row justify-content-center mb-80">
           <div className="col-lg-6 text-center">
@@ -21,7 +21,7 @@ function Clients() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-11">
-            <div className="row md-marg">
+            <div className="row md-marg justify-content-center">
               {data.map((item) => (
                 <div
                   className="col-md-4 col-6 brand  box-bg"
@@ -42,7 +42,7 @@ function Clients() {
                     <p className="link fz-12 black">
                       {item.date}
                     </p>
-                    <span className="mt-100 h-100">
+                    <span className="h-100">
                       {item.title}
                     </span>
                   </div>
