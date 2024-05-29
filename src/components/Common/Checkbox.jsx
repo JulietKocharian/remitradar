@@ -22,7 +22,7 @@ const RedCheckbox = ({ label, isChecked, onChange }) => {
                     display: 'inline-block',
                     minWidth: '20px', // Use minWidth instead of width
                     minHeight: '20px', // 
-                    border: '2px solid red',
+                    border: '2px solid #0079ff',
                     borderRadius: '3px',
                     marginRight: '10px',
                     position: 'relative',
@@ -35,7 +35,7 @@ const RedCheckbox = ({ label, isChecked, onChange }) => {
                         height="16"
                         viewBox="0 0 24 24"
                         fill="none"
-                        stroke="red"
+                        stroke="#0079ff"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
