@@ -15,16 +15,29 @@ const swiperOptions = {
     0: {
       slidesPerView: 1,
       spaceBetween: 10,
+      allowSlidePrev: false,
+      allowSlideNext: false,
     },
     640: {
       slidesPerView: 2,
       spaceBetween: 30,
+      allowSlidePrev: false,
+      allowSlideNext: false,
     },
     768: {
       slidesPerView: 3,
+      allowSlidePrev: false,
+      allowSlideNext: false,
+    },
+    970: {
+      slidesPerView: 3,
+      allowSlidePrev: true,
+      allowSlideNext: true,
     },
     1024: {
       slidesPerView: 3,
+      allowSlidePrev: true,
+      allowSlideNext: true,
     },
   },
 };

@@ -41,7 +41,7 @@ function Footer({ }) {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-4 d-flex align-items-center justify-content lg-end justify-content-center" style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+            <div className="col-lg-4 d-flex justify-content lg-end justify-content-center mw-990">
               <div className="copyright">
                 <div className="ml-auto">
                   <div className="d-flex flex-row justify-content-between align-items-center" style={{ gap: 10 }}>
@@ -77,13 +77,12 @@ function Footer({ }) {
                 </div>
               </div>
             </div>
-            <div className="row col-12 w-100 footerDevider" />
-            <div className="col-lg-12 d-flex align-items-center justify-content lg-end justify-content-center mt-100 mt">
-              <div className="copyright">
-                <div className="ml-auto">
-                  <p className="fz-13">Powered by RemitRadar Technologies</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-lg-12 d-flex justify-content-center mt-50 w-100" style={{ borderTop: '1px solid #ccc' }}>
+            <div class="copyright">
+              <p class="fz-13 text-center mt-50">Powered by RemitRadar Technologies</p>
             </div>
           </div>
         </div>
