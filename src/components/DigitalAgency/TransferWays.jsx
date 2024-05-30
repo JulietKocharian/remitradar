@@ -17,11 +17,6 @@ function TransferWays({ }) {
     <section className="services section-padding">
       <div className="container">
         <div className="sec-lg-head mb-20">
-          <div className="row">
-            <div className="col-lg-6">
-              <h6 className="mb-15 blue">{t("transfers")}</h6>
-            </div>
-          </div>
           <div className="row align-items-center" >
             <div className="laptop">
               <Image

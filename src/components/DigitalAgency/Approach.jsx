@@ -66,7 +66,7 @@ function Approach() {
                       <Image
                         width={500}
                         height={500}
-                        src={`${"/dark"}/${item.image}`}
+                        src={`${"/dark"}${item.image}`}
                         alt="image"
                       />
                     </div>
