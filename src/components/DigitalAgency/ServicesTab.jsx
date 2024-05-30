@@ -1,4 +1,4 @@
-import background from './../../../public/dark/assets/imgs/background/background.jpeg';
+import background from './../../../public/dark/assets/imgs/background/us-img.png';
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 

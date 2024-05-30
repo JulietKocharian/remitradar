@@ -120,7 +120,7 @@ function TransferPrices() {
                 >
                   {data.map((item) => (
                     <SwiperSlide key={item.id}>
-                      <div style={{border: '1px solid lightgray'}}>
+                      <div>
                         <div className="img">
                           <Image
                             src={`/dark/${item.image}`}

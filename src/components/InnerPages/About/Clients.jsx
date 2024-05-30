@@ -9,11 +9,20 @@ import Image from "next/image";
 function Clients() {
   return (
     <div className="clients section-padding position-re">
+      <div className="sape">
+        <Image
+          width={500}
+          height={500}
+          className="about-sape"
+          src={`/${"dark"}/assets/imgs/background/about-bg.png`}
+          alt="01"
+        />
+      </div>
       <div className="container">
         <div className="row justify-content-center mb-80">
           <div className="col-lg-6 text-center">
             <div className="text">
-              <h3>How RemitRadar works</h3>
+              <h3 style={{color: '#6a35ff'}}>How RemitRadar works</h3>
             </div>
           </div>
         </div>
@@ -24,7 +33,7 @@ function Clients() {
             <div className="row md-marg justify-content-center">
               {data.map((item) => (
                 <div
-                  className="col-md-4 col-6 brand  box-bg"
+                  className="col-md-4 col-sm-6 brand  box-bg"
                   key={Math.floor(Math.random() * 10000)}
                 >
                   <div className="item mb-30 fadeIn ">
@@ -42,7 +51,7 @@ function Clients() {
                     <p className="link fz-12 black">
                       {item.date}
                     </p>
-                    <span className="h-100" style={{textAlign: 'left'}}>
+                    <span className="h-100" style={{ textAlign: 'left' }}>
                       {item.title}
                     </span>
                   </div>

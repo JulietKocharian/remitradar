@@ -289,13 +289,14 @@ p {
 }
 
 .sub-bg {
-  background-color:  #9958ff;
+  background-color: #9958ff;
   /* background-color: #1d1d1d; */
 }
 
 .sub-bg-white {
-  background-color: white;
-  box-shadow: 2px 2px 20px 0px lightgray;
+  border-radius: 20px;
+  background-color: #ffffffb5;
+  box-shadow: 0px 5px 89.61px 13.39px rgba(23, 29, 113, 0.26);
 }
 
 .sec-lg-head.text-dark p,
@@ -2242,11 +2243,16 @@ footer .social-text li:last-of-type {
 }
 
 .clients .brand .item {
+  min-height: 400px;
   position: relative;
   text-align: center;
   /* padding: 80px 20px; */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 89.61px 13.39px rgba(23, 29, 113, 0.05);
+  background: rgba(255, 255, 255, 0.205);
+  padding: 30px 30px 30px;
 }
 
 .clients .brand .item .link {
@@ -3305,6 +3311,27 @@ p.text {
   font-weight: 500;
   color: #fff;
   padding-top: 17px;
+}
+
+@media (max-width: 1599px) {
+  .sape .about-sape {
+    /* right: -7%; */
+    width: 38%;
+  }
+}
+
+@media (max-width: 1899px) {
+  .sape .about-sape {
+    right: 0%;
+    width: 32%;
+  }
+}
+
+.sape .about-sape {
+  position: absolute;
+  z-index: -1;
+  text-align: right;
+  width: 50%;
 }
 
 @media (max-width: 900px) {
