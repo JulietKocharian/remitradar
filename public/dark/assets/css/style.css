@@ -2457,7 +2457,7 @@ footer .social-text li:last-of-type {
   }
 
   .flexContainer .pr {
-    padding-right: 30px;
+    padding-right: 10px;
   }
 
   .flexContainer .devider {
@@ -2470,13 +2470,26 @@ footer .social-text li:last-of-type {
   }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .flexContainer .pr {
     padding-right: 10px;
   }
+} */
+
+.center {
+  margin: auto !important;
+}
+.startBtn {
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
-/*  currency*/
+@media (max-width: 355px) {
+  .startBtn {
+    width: 70%;
+  }
+}
 
 .country-currency-select {
   display: flex;
@@ -3733,12 +3746,12 @@ header.full-height {
   align-items: center !important;
   flex-direction: column;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .mw-990 {
-    gap: 10px; 
+    gap: 10px;
     align-items: start !important;
   }
 }

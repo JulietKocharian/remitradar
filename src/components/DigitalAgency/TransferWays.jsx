@@ -29,55 +29,59 @@ function TransferWays({ }) {
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
                   <p className="black">Receiver gets:</p>
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
-                  <button className="btn btn-info btn-lg mt-30" onClick={() => setVisible(true)} style={{ display: 'block', margin: 'auto' }}>
-                    <span style={{ color: 'white'}}>GET STARTED</span>
+                  <button className="btn btn-info btn-lg mt-30 startBtn" onClick={() => setVisible(true)}>
+                    <span style={{ color: 'white' }}>GET STARTED</span>
                   </button>
                 </div>
               </div>
               <div className="row mt-10 justify-content-center fees">
-                <div className="col-lg-6 col-12 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer mt-30">
-                  <div className="d-flex flex-row">
-                    <div className="pr">
-                      <p className="black">Fee</p>
-                      <p className="blue" style={{ textDecoration: 'line-through' }}>2.99</p>
-                    </div>
-                  </div>
-                  <div className="d-flex flex-row">
-                    <div className="pr">
-                      <p className="black">Auction Rate</p>
-                      <p className="blue">76.8506</p>
-                    </div>
-                  </div>
-                  <div className="d-flex flex-row">
-                    <div>
-                      <p className="black">Delivery</p>
-                      <p className="blue">0-2 days</p>
-                    </div>
-                  </div>
-                </div>
-                {
-                  isOpen &&
-                  <div className="row mt-10 justify-content-center fees">
-                    <div className="col-lg-6 col-12 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer">
-                      <div className="d-flex flex-row">
+                <table className="table mt-3">
+                  <tbody>
+                    <tr className="col-lg-6 col-12 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer mt-30 center">
+                      <td className="d-flex flex-row">
                         <div className="pr">
-                          <p className="black">Banks Fee</p>
-                          <p className="black">20</p>
+                          <p className="black">Fee</p>
+                          <p className="blue"><del>2.99</del></p>
                         </div>
-                      </div>
-                      <div className="d-flex flex-row">
+                      </td>
+                      <td className="d-flex flex-row">
                         <div className="pr">
-                          <p className="black">Banks Rate</p>
-                          <p className="black">66.3533</p>
+                          <p className="black">Auction Rate</p>
+                          <p className="blue">76.8506</p>
                         </div>
-                      </div>
-                      <div>
-                        <p className="black">Delivery</p>
-                        <p className="black">3-4 days</p>
-                      </div>
-                    </div>
-                  </div>
-                }
+                      </td>
+                      <td className="d-flex flex-row">
+                        <div>
+                          <p className="black">Delivery</p>
+                          <p className="blue">0-2 days</p>
+                        </div>
+                      </td>
+                    </tr>
+                    {
+                      isOpen &&
+                      <tr className="col-lg-6 col-12 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer mt-30 center">
+                        <td className="d-flex flex-row">
+                          <div className="pr">
+                            <p className="black">Banks Fee</p>
+                            <p className="blue"><del>20</del></p>
+                          </div>
+                        </td>
+                        <td className="d-flex flex-row">
+                          <div className="pr">
+                            <p className="black">Banks Rate</p>
+                            <p className="blue">66.3533</p>
+                          </div>
+                        </td>
+                        <td className="d-flex flex-row">
+                          <div>
+                            <p className="black">Delivery</p>
+                            <p className="blue">3-4 days</p>
+                          </div>
+                        </td>
+                      </tr>
+                    }
+                  </tbody>
+                </table>
               </div>
               <div className="row mt-30 justify-content-center">
                 <div className="col-lg-6 d-flex justify-content-center">
