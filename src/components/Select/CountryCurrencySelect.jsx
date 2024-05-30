@@ -18,13 +18,17 @@ const currencyOptions = Array.from(new Set(data.map(country => country.currency)
 const customStyles = {
     control: (provided, { isFocused }) => ({
         ...provided,
+        color: 'white',
         display: 'flex',
         alignItems: 'center',
         minHeight: '40px',
-        height: '42px',
-        borderRadius: 0,
-        boxShadow: isFocused ? 'none' : provided.boxShadow,
-        borderColor: isFocused ? '#ccc' : provided.borderColor,
+        height: '48px',
+        border: '1px solid rgba(255, 255, 255, 0.4)',
+        borderRadius: 20,
+        boxShadow: '0px 5px 26.1px 3.9px rgba(23, 29, 113, 0.05)',
+        padding: 0,
+        paddingInline: 8,
+        background: 'rgba(255, 255, 255, 0.17)',
         '&:hover': {
             borderColor: '#ccc'
         },
@@ -112,6 +116,7 @@ const CountryCurrencySelect = ({ defaultValue }) => {
                             ...provided,
                             border: 'none',
                             borderRadius: 0,
+                            backgroundColor: 'transparent',
                             boxShadow: isFocused ? 'none' : provided.boxShadow,
                             borderColor: isFocused ? '#ccc' : provided.borderColor,
                             '&:hover': {

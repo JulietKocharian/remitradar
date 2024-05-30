@@ -50,7 +50,7 @@ const RedCheckbox = ({ label, isChecked, onChange }) => {
                     </svg>
                 )}
             </label>
-            <span onClick={handleCheckboxChange} style={{cursor: 'pointer'}}>{label}</span>
+            <span className="exchangeText" onClick={handleCheckboxChange} style={{cursor: 'pointer', fontSize: 12}}>{label}</span>
         </div>
     );
 };
@@ -73,7 +73,7 @@ const CheckboxGroup = () => {
     };
 
     return (
-        <div className="col-lg-6 col-12 col-md-8 col-sm-8 flex-lg-row">
+        <div className="col-lg-10 col-md-8 col-sm-8 flex-lg-row">
             {checkboxes.map((checkbox, index) => (
                 <div className="mt-30" key={index}>
                     <RedCheckbox

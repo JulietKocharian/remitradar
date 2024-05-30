@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 //= Data
 import CountryCurrencySelect from "../Select/CountryCurrencySelect";
 import CheckboxGroup from "../Common/Checkbox";
+import Image from "next/image";
 
 function TransferWays({ }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,16 +19,37 @@ function TransferWays({ }) {
         <div className="sec-lg-head mb-20">
           <div className="row">
             <div className="col-lg-6">
-              <h6 className="mb-15">{t("transfers")}</h6>
+              <h6 className="mb-15 blue">{t("transfers")}</h6>
             </div>
           </div>
-          <div className="row justify-content-center" >
-            <div className="services-mainContainer container col-12 col-lg-12 col-md-11 col-sm-11">
+          <div className="row align-items-center" >
+            <div className="laptop">
+              <Image
+                width={500}
+                height={500}
+                className="man-lap"
+                src={`/${"dark"}/assets/imgs/background/laptop-man.png`}
+                alt="01"
+              />
+            </div>
+            {/*  */}
+            <div className="col-lg-6 col-md-12 col-sm-12" style={{zIndex: '100'}}>
+              <div className="banner-content">
+                <h1 className="head">Compare Money Transfers</h1>
+                <p className="text">
+                  Save on fees, obtain the best exchange rates and find <br />
+                  the cheapest transfer provider with our real-time comparison.
+                </p>
+              </div>
+            </div>
+
+            {/*  */}
+            <div className="services-mainContainer  col-lg-6 col-md-12 col-sm-12">
               <div className="row mt-10 justify-content-center">
-                <div className="col-lg-6 col-12 col-md-8 col-sm-8 flex-md-column flex-lg-row">
-                  <p className="black">Sending:</p>
+                <div className="col-lg-10 col-md-8 col-sm-8 flex-md-column flex-lg-row">
+                  <p className="exchangeText">Sending:</p>
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
-                  <p className="black">Receiver gets:</p>
+                  <p className="exchangeText">Receiver gets:</p>
                   <CountryCurrencySelect defaultValue={{ code: "US", currency: "USD", name: "United States" }} />
                   <button className="btn btn-info btn-lg mt-30 startBtn" onClick={() => setVisible(true)}>
                     <span style={{ color: 'white' }}>GET STARTED</span>
@@ -37,29 +59,29 @@ function TransferWays({ }) {
               <div className="row mt-10 justify-content-center fees">
                 <table className="table mt-3">
                   <tbody>
-                    <tr className="col-lg-6 col-12 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer mt-30 center">
+                    <tr className="col-lg-10 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer mt-30 center">
                       <td className="d-flex flex-row">
                         <div className="pr">
-                          <p className="black">Fee</p>
+                          <p className="exchangeText">Fee</p>
                           <p className="blue"><del>2.99</del></p>
                         </div>
                       </td>
                       <td className="d-flex flex-row">
                         <div className="pr">
-                          <p className="black">Auction Rate</p>
+                          <p className="exchangeText">Auction Rate</p>
                           <p className="blue">76.8506</p>
                         </div>
                       </td>
                       <td className="d-flex flex-row">
                         <div>
-                          <p className="black">Delivery</p>
+                          <p className="exchangeText">Delivery</p>
                           <p className="blue">0-2 days</p>
                         </div>
                       </td>
                     </tr>
                     {
                       isOpen &&
-                      <tr className="col-lg-6 col-12 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer mt-30 center">
+                      <tr className="col-lg-10 col-md-8 col-sm-8 flex-lg-row d-flex justify-content-between flexContainer mt-30 center">
                         <td className="d-flex flex-row">
                           <div className="pr">
                             <p className="black">Banks Fee</p>
